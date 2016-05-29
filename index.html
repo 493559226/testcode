@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>无级树形菜单</title>
+</head>
+<body>
+<div class="btn">
+<input name="" type="button" id="btn_open" value="全部展开" />&nbsp;&nbsp;
+<input name="" type="button" id="btn_close" value="全部收缩" />
+</div>
+<div id="menuTree" class="menuTree"></div>
+<script type="text/javascript">
+/*json数据*/
+var data = [
+
+/*name:用户名
+  icourl:会员级别图标地址
+  list:列表
+*/
+
+{
+    "name": "管理员",
+    "icourl":"images/Gold.png",
+    "list": [{
+        "name": "一级用户A",
+        "icourl":"images/Gold.png"
+    },
+       {
+        "name": "一级用户B",
+        "icourl":"images/Gold.png",
+        "list": [{
+            "name": "二级用户A",
+            "icourl":"images/Diamonds.png"
+        },
+        {
+            "name": "二级用户B",
+            "icourl":"images/Gold.png",
+            "list": [{
+                "name": "三级用户A",
+                "icourl":"images/Mercury.png"
+            },
+            {
+                "name": "三级用户B",
+                "icourl":"images/Mercury.png",
+                "list": [{
+                    "name": "四级用户A",
+                    "icourl":"images/WhiteGold.png"
+                },
+                {
+                    "name": "四级用户B",
+                    "icourl":"images/WhiteGold.png"
+                }]
+            }]
+        },
+        {
+            "name": "二级用户C",
+            "icourl":"images/Diamonds.png"
+        },
+        {
+            "name": "二级用户D",
+            "icourl":"images/Diamonds.png"
+        }]
+    },
+    {
+        "name": "一级用户C",
+        "icourl":"images/Gold.png"
+    }]
+},
+
+
+{
+    "name": "预算员",
+    "icourl":"images/Diamonds.png",
+    "list": [{
+        "name": "一级用户A",
+        "icourl":"images/Gold.png"
+    },
+    {
+        "name": "一级用户B",
+        "icourl":"images/Gold.png",
+        "list": [{
+            "name": "****b",
+            "icourl":"images/Gold.png"
+        },
+        {
+            "name": "****bb",
+            "icourl":"images/Gold.png"
+        }]
+    },
+    ]
+},
+
+
+{
+    "name": "发布员",
+    "icourl":"images/Mercury.png",
+    "list": [{
+        "name": "二级用户A",
+        "icourl":"images/Diamonds.png"
+    },
+    {
+        "name": "二级用户B",
+        "icourl":"images/Diamonds.png"
+    }]
+},
+
+
+{
+    "name": "信息员",
+    "icourl":"images/WhiteGold.png"
+}
+
+]
+</script>
+<script type="text/javascript" src="js/Tree.js"></script>
+</body>
+</html>

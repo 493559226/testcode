@@ -1,0 +1,10 @@
+div,ul,li,span{padding:0;margin:0;}
+.menuTree{ margin-left:0px;}
+.menuTree .menulist{ padding-left:24px;background:url("../images/line.gif") no-repeat 8px 0px;}
+.menuTree .menulist img{vertical-align:middle;margin-right:10px;margin-left:10px;}
+.menuTree .menulist ul{ overflow:hidden; display:none; height:auto;/*background:url("../images/line.gif") no-repeat 8px 10px;*/}
+.menuTree span{ display:block; height:30px; line-height:30px; padding-left:0px; cursor:pointer;border-bottom:1px solid #f0f0f0;font-family:Serif;font-size:14px;}
+.menuTree span:hover{ background-color:#f7f7f7; color:#cf0404;}
+.menuTree a{ color:#333; text-decoration:none;}
+.menuTree a:hover{ color:#06F;}
+.btn{ height:30px; margin-top:10px;}
